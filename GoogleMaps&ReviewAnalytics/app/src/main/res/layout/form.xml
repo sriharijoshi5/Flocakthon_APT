@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="fill_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/ScrollView">
+</ScrollView>
+
+
+    <TextView
+        android:text="Please give us feedback after the drive:"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:id="@+id/textView2"
+        android:textSize="18sp"
+        android:fontFamily="monospace" />
+
+    <CheckedTextView
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:id="@+id/checkedTextView"
+        android:text="How satisfied are you with the working of GpT?"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:id="@+id/Mquestion1"
+        android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <RadioButton
+        android:text="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioButton6"
+        android:layout_weight="0.04" />
+
+    <RadioButton
+        android:text="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioButton7"
+        android:layout_weight="0.04" />
+
+    <RadioButton
+        android:text="3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioButton3"
+        android:layout_weight="0.04" />
+
+    <RadioButton
+        android:text="4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioButton4"
+        android:layout_weight="0.04" />
+
+    <RadioButton
+        android:text="5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioButton5"
+        android:layout_weight="0.04" />
+</RadioGroup>
+    <TextView
+        android:text="When was the glare not prevented?"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_weight="0.04"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="18sp" />
+<RadioGroup
+    android:id="@+id/Mquestion2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <RadioButton
+        android:text="Beginning Phase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioButton8"
+        android:layout_weight="0.04" />
+
+    <RadioButton
+        android:text="Mid Phase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioButton9"
+        android:layout_weight="0.04" />
+
+    <RadioButton
+        android:text="End Phase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioButton11"
+        android:layout_weight="0.04" />
+</RadioGroup>
+    <TextView
+        android:text="When did GpT act unnecessarily?"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:layout_weight="0.04"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="18sp" />
+    <RadioGroup
+        android:id="@+id/Mquestion3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <RadioButton
+        android:text="Beginning Phase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioButton12"
+        android:layout_weight="0.04" />
+
+    <RadioButton
+        android:text="Mid Phase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioButton13"
+        android:layout_weight="0.04" />
+
+    <RadioButton
+        android:text="End Phase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioButton14" />
+    </RadioGroup>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:text="Was the screen at the right position?"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+<RadioGroup
+    android:id="@+id/Mquestion4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <RadioButton
+        android:text="Perfect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioButton15"
+        android:textSize="14sp" />
+
+    <RadioButton
+        android:text="Below Eye level"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioButton16" />
+
+    <RadioButton
+        android:text="Above Eye level"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioButton17" />
+
+
+</RadioGroup>
+    <Button
+        android:text="Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button3"
+        android:layout_weight="1" />
+
+</LinearLayout>
+</RelativeLayout></ScrollView>

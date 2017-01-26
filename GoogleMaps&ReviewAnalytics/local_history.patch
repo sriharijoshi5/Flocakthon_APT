@@ -1,0 +1,34 @@
+Index: app/src/main/java/com/androidtutorialpoint/googlemapsapp/MapsActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/androidtutorialpoint/googlemapsapp/MapsActivity.java	(revision )
++++ app/src/main/java/com/androidtutorialpoint/googlemapsapp/MapsActivity.java	(revision )
+@@ -40,6 +40,8 @@
+ import java.io.IOException;
+ import java.util.List;
+ 
++import static android.R.attr.id;
++
+ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback,
+         GoogleApiClient.ConnectionCallbacks,
+         GoogleApiClient.OnConnectionFailedListener,
+@@ -105,7 +107,7 @@
+         }
+         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
+         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
+-                .findFragmentById(R.id.map);
++                .findFragmentById(id.map);
+         mapFragment.getMapAsync(this);
+         // ATTENTION: This was auto-generated to implement the App Indexing API.
+         // See https://g.co/AppIndexing/AndroidStudio for more information.
+@@ -240,7 +242,7 @@
+ 
+     }
+     public void onMapSearch(View view) {
+-        EditText locationSearch = (EditText) findViewById(R.id.editText);
++        EditText locationSearch = (EditText) findViewById(id.editText);
+         String location = locationSearch.getText().toString();
+         List<android.location.Address> addressList = null;
+ 
